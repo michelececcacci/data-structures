@@ -22,4 +22,5 @@ class MyVector
         void print();
         void insert(int idx, int val);
         int find(int val);
+        void prepend(int val);
 };

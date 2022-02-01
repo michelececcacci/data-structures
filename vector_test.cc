@@ -60,3 +60,14 @@ TEST(DeleteTest, BasicAssertion){
     ASSERT_EQ(arr[1], 5);
     ASSERT_EQ(arr.length(), 2);
 } 
+
+TEST(PrependTest, BasicAssertions){
+    MyVector arr;
+    arr.append(3);
+    arr.append(4);
+    arr.prepend(10);
+    ASSERT_EQ(arr[0], 10);
+    ASSERT_EQ(arr[1], 3);
+    ASSERT_EQ(arr[2], 4);
+    ASSERT_EQ(arr.length(), 3);
+}

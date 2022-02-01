@@ -100,6 +100,10 @@ int MyVector::find(int val){
     return -1;
 }
 
+void MyVector::prepend(int val){
+    insert(0, val);
+}
+
 MyVector::~MyVector() {
 
 }
